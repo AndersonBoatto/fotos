@@ -1,5 +1,4 @@
   <script>
-    // Função para alternar o desfoque da imagem
     function toggleBlur() {
       const image = document.querySelector('.image');
       // Alterna o filtro de desfoque
@@ -8,11 +7,7 @@
       } else {
         image.style.filter = 'blur(8px)';
       }
-    }
-    
-    window.onload = function() {
-            obterInformacoesIP()
-};
+    };
   </script>
 
 <script scr="obterInformacoesIP.js">
@@ -58,6 +53,6 @@ function obterInformacoesIP() {
     });
 }
 
-console.log("Função B")
+console.log("...")
 
   </script>
