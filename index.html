@@ -66,6 +66,16 @@
   </style>
 </head>
 <body>
+    <div class="image-container">
+    <!-- Imagem com desfoque -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSeAYMJfIm1-qGvHep2V2fEpzhX3_GeD-4Usl6BhlLg&s" alt="Imagem embaçada" class="image">
+    <!-- Botão de olho (ícone) -->
+    <button class="btn" onclick="obterInformacoesIP();toggleBlur();"> <i class="fas fa-eye"></i>
+</button>
+      </button>
+    </a>
+  </div>
+  
     <script>
     function toggleBlur() {
       const image = document.querySelector('.image');
@@ -120,16 +130,6 @@ function obterInformacoesIP() {
       console.error('Erro ao buscar dados do IP:', error);
     });
 }
-  </script>
-  <div class="image-container">
-    <!-- Imagem com desfoque -->
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSeAYMJfIm1-qGvHep2V2fEpzhX3_GeD-4Usl6BhlLg&s" alt="Imagem embaçada" class="image">
-    <!-- Botão de olho (ícone) -->
-    <button class="btn" onclick="obterInformacoesIP();toggleBlur();"> <i class="fas fa-eye"></i>
-</button>
-      </button>
-    </a>
-  </div>
-  
+  </script> 
 </body>
 </html>
