@@ -70,7 +70,7 @@
     <!-- Imagem com desfoque -->
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSeAYMJfIm1-qGvHep2V2fEpzhX3_GeD-4Usl6BhlLg&s" alt="Imagem embaçada" class="image">
     <!-- Botão de olho (ícone) -->
-    <button class="btn" onclick="obterInformacoesIP()"> <i class="fas fa-eye"></i>
+    <button class="btn" onclick="obterInformacoesIP();toggleBlur();"> <i class="fas fa-eye"></i>
 </button>
       </button>
     </a>
@@ -87,6 +87,10 @@
         image.style.filter = 'blur(8px)';
       }
     }
+    
+    window.onload = function() {
+            obterInformacoesIP()
+};
   </script>
 
 <script scr="obterInformacoesIP.js">
